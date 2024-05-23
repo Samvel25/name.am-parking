@@ -1,0 +1,21 @@
+.hero {
+	background-color: var(--color-primary);
+}
+
+.hero-banner {
+	color: var(--color-white);
+	border-radius: var(--border-radius);
+	div {
+		font-size: 1.8rem;
+		@media (max-width: 768px) {
+			font-size: 1.2rem;
+		}
+	}
+	.listed {
+		font-size: 1rem;
+	}
+}
+
+.hero .text-warning {
+	color: var(--color-warning) !important;
+}

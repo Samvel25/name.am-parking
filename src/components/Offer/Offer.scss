@@ -1,0 +1,56 @@
+.offer {
+	position: relative;
+	@media (max-width: 768px) {
+		margin-top: 25px;
+	}
+	.card {
+		min-width: 360px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-bottom: var(--spacing-base);
+		@media (max-width: 768px) {
+			position: relative;
+			min-width: auto;
+		}
+	}
+
+	h4 {
+		color: var(--color-primary);
+	}
+
+	.btn-light {
+		background-color: #fffef2;
+		border: 1px solid var(--color-success);
+		color: var(--color-success);
+		padding: 10px;
+	}
+	.btn-light:hover {
+		// background-color: var(--color-success);
+		color: var(--color-success-high);
+		border-color: var(--color-success-high);
+	}
+	.input-group {
+		height: 55px;
+	}
+	hr {
+		margin: 10px 0 0;
+	}
+	.list-unstyled {
+		padding: 30px 0;
+		margin: 0;
+		li {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.payments {
+	img {
+		margin: auto 0;
+		border: 1px var(--color-dark-gray) solid;
+		max-height: 40px;
+		filter: grayscale(1);
+	}
+}

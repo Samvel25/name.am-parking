@@ -1,0 +1,33 @@
+.fixed-offer {
+	z-index: 1030;
+	background: var(--color-white);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	position: fixed;
+	width: 100%;
+	display: none;
+	bottom: 0px;
+	right: 0px;
+	section {
+		padding: 0;
+	}
+	button {
+		font-weight: 600;
+		padding: 0.8rem 1.5rem;
+		width: 100%;
+		color: var(--color-dark-gray);
+		background: linear-gradient(
+			0.25turn,
+			var(--color-success-high),
+			var(--color-success)
+		);
+		border-color: var(--color-success-high);
+		&:hover {
+			background: linear-gradient(0.25turn, #e6c200, #d4b000);
+			color: #00112c;
+
+			border-color: var(--color-success);
+		}
+	}
+}

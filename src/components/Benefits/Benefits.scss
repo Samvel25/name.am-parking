@@ -1,0 +1,60 @@
+.benefits {
+	.find-domain {
+		label {
+			font-weight: 600;
+			line-height: 32px;
+			font-size: 18px;
+			display: block;
+			margin-bottom: 20px;
+		}
+		.search-row {
+			display: grid;
+			grid-template-columns: 1fr auto;
+		}
+		.search-container {
+			position: relative;
+			margin-right: 10px;
+			span {
+				position: absolute;
+				top: 50%;
+				left: 15px;
+				transform: translateY(-50%);
+			}
+			input {
+				font-size: 1rem;
+			}
+		}
+		input {
+			background-color: #f7f9fb;
+			border: 1px solid #6868681a;
+			border-radius: 7px;
+			padding: 12px 20px 12px 42px;
+			line-height: 20px;
+			outline: 1px solid transparent;
+			transition: 0.3s;
+			width: 100%;
+		}
+		button {
+			background-color: #66ccff;
+			width: 122px;
+			text-align: center;
+			padding: 10px;
+			font-size: 14px;
+			display: inline-block;
+			color: #fff;
+			border-radius: 7px;
+			line-height: 24px;
+			box-sizing: border-box;
+			border: none;
+			cursor: pointer;
+			box-shadow: 0 0 5px #66ccff;
+			transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+		}
+
+		button:hover {
+			background-color: #4da6ff;
+			box-shadow: 0 0 10px #66ccff, 0 0 20px #66ccff;
+			transform: scale(1.05);
+		}
+	}
+}
