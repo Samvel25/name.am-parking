@@ -1,40 +1,195 @@
 .suggested-domains {
+	padding: 2rem auto;
+	background-color: var(--color-light-gray);
+	border-radius: var(--border-radius);
+
+	h4 {
+		font-family: var(--font-family-heading);
+		color: var(--color-dark-gray);
+		margin-bottom: 2.5rem;
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
 	table {
 		width: 100%;
+		border-collapse: separate;
+		border-spacing: 0 1rem;
+		background: transparent;
+		box-shadow: var(--box-shadow);
+		border-radius: var(--border-radius);
+
+		thead {
+			display: none; /* Hide table header */
+		}
+
+		tr {
+			border-radius: var(--border-radius);
+			transition: transform 0.3s, box-shadow 0.3s;
+
+			&:hover {
+				transform: translateY(-0.5rem);
+				box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+				.badge {
+					background: linear-gradient(
+						135deg,
+						#5bb7e6,
+						#66ccff
+					); /* Replace with appropriate color */
+					box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+					transform: translateY(-0.1rem);
+				}
+			}
+
+			td {
+				padding: 1rem 1.8rem 1.6rem;
+				vertical-align: middle;
+				background-color: transparent;
+				&.text-end {
+					text-align: end;
+				}
+			}
+			&:last-child {
+				td {
+					border-bottom: none;
+					padding: 1rem 1.8rem;
+					&:hover {
+						padding: 1rem 1.8rem 1.6rem;
+					}
+				}
+			}
+		}
 
 		.domain-link {
+			font-size: 1.1rem;
 			font-weight: 700;
 			color: var(--color-primary);
 			text-decoration: none;
-		}
+			transition: color 0.3s;
 
-		.domain-link:hover {
-			text-decoration: underline;
+			&:hover {
+				color: var(--color-primary);
+				text-decoration: underline;
+			}
 		}
 
 		.btn-outline-primary {
+			min-width: 130px;
 			color: var(--color-primary);
 			border-color: var(--color-primary);
-		}
+			transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+			padding: 0.75rem 1.5rem;
+			font-size: 1rem;
+			border-radius: var(--border-radius);
 
-		.btn-outline-primary:hover {
-			border-color: #1e7a38;
+			&:hover {
+				background-color: var(--color-primary);
+				color: var(--color-white);
+				border-color: var(--color-primary);
+			}
 		}
 
 		.badge {
 			font-size: 1rem;
-			margin-right: 0.5rem;
+			margin-right: 0.7rem;
+			background: linear-gradient(
+				135deg,
+				#66ccff,
+				#5bb7e6
+			); /* Replace with appropriate color */
+			color: var(--color-white);
+			padding: 0.6rem 1.4rem;
+			border-radius: 1rem;
+			font-weight: 700;
+			display: inline-block;
+			box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+			transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+
+			// &:hover {
+			// 	background: linear-gradient(
+			// 		135deg,
+			// 		#5bb7e6,
+			// 		#66ccff
+			// 	); /* Replace with appropriate color */
+			// 	box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+			// 	transform: translateY(-0.1rem);
+			// }
+		}
+
+		@media (max-width: 768px) {
+			display: block;
+			border: none;
+			tbody {
+				display: block;
+			}
+
+			tr {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				background: transparent;
+				padding: 1rem;
+				margin-bottom: 1rem;
+				box-shadow: var(--box-shadow);
+				transition: transform 0.3s, box-shadow 0.3s;
+
+				&:hover {
+					transform: none;
+					box-shadow: var(--box-shadow);
+				}
+
+				td {
+					border: none;
+					padding: 0;
+					width: 100%;
+
+					&.text-end {
+						text-align: start;
+						display: flex;
+						justify-content: flex-end;
+						margin-top: 0.5rem;
+					}
+				}
+				&:last-child {
+					td {
+						padding: 0;
+					}
+				}
+			}
+
+			.domain-link {
+				font-size: 1.2rem;
+				margin-bottom: 0;
+			}
+
+			.btn-outline-primary {
+				width: 100%;
+				text-align: center;
+				padding: 0.7rem;
+				font-size: 1.1rem;
+				margin-top: 0.8rem;
+			}
 		}
 	}
-}
 
-.more-domains {
-	.btn-outline-secondary {
-		border-color: var(--color-secondary);
-		color: var(--color-secondary);
-	}
+	.more-domains {
+		text-align: center;
+		margin-top: 3rem;
 
-	.btn-outline-secondary:hover {
-		color: #fff;
+		.btn-outline-secondary {
+			color: var(--color-primary);
+			border-color: var(--color-primary);
+			transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+			padding: 0.75rem 1.5rem;
+			font-size: 1rem;
+			border-radius: var(--border-radius);
+			font-weight: 700;
+
+			&:hover {
+				background-color: var(--color-primary);
+				color: var(--color-white);
+				border-color: var(--color-primary);
+			}
+		}
 	}
 }

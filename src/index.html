@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>organic.am is for sale!</title>
 		<link
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,13 +28,18 @@
 		<header id="header" class="navbar"></header>
 		<main class="content flex-grow-1">
 			<section id="hero" class="hero"></section>
+			<section id="domain-features" class="domain-features"></section>
 			<section id="benefits" class="benefits mt-md-5 mt-0"></section>
 			<section id="suggested-domains" class="suggested-domains mt-5"></section>
+			<div id="scroll-to-top" class="fixed-offer elevate"></div>
+			<footer id="footer"></footer>
 		</main>
-		<div id="scroll-to-top" class="fixed-offer elevate"></div>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+		<script>
+			console.log("Bootstrap and Popper.js loaded");
+		</script>
+		<script src="bundle.js"></script>
 	</body>
 </html>

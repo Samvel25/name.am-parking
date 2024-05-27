@@ -1,57 +1,111 @@
-<div class="card shadow-sm">
-	<h4 class="mb-3 fw-bold">Make an offer</h4>
-	<form>
-		<div class="mb-3">
-			<label for="offer" class="form-label visually-hidden"
-				>Your offer in USD</label
-			>
-			<div class="input-group input-group-lg">
-				<span class="input-group-text">$</span>
-				<input
-					type="number"
-					class="form-control"
-					id="offer"
-					name="offer"
-					placeholder="My offer in USD"
-					min="0"
-					max="99999999"
-					required
-				/>
+<div class="card shadow-sm mt-3 mt-md-0">
+	<div class="side-pudding">
+		<div class="border-custom pt-0">
+			<h4 class="mb-2 fw-bold">Get this domain</h4>
+			<p>Pay the full USD $100,000 now, or make an offer.</p>
+		</div>
+	</div>
+	<form id="offer-form">
+		<div class="side-pudding">
+			<div id="offBorderTwo" class="border-custom">
+				<div class="form-check">
+					<input
+						class="form-check-input"
+						type="radio"
+						name="purchaseOption"
+						id="buyNow"
+						value="buyNow"
+						checked
+					/>
+					<label class="form-check-label" for="buyNow">
+						Buy now <span>USD $100,000</span>
+					</label>
+				</div>
 			</div>
 		</div>
-		<button type="submit" class="button btn btn-light w-100 my-4">
-			Make offer <i class="bi bi-arrow-right"></i>
-		</button>
+		<div id="purchasingOptionBg" class="side-pudding">
+			<div id="offBorder" class="form-check border-custom">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="purchaseOption"
+					id="makeOffer"
+					value="makeOffer"
+				/>
+				<label class="form-check-label" for="makeOffer"> Make an offer </label>
+			</div>
+			<div id="offer-input-group" class="d-none">
+				<label for="offer" class="form-label visually-hidden"
+					>Your offer in USD</label
+				>
+				<div class="input-group input-group-lg">
+					<span class="input-group-text">$</span>
+					<input
+						type="number"
+						class="form-control"
+						id="offer"
+						name="offer"
+						placeholder="My offer in USD"
+						min="0"
+						max="99999999"
+						required
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="border-custom side-pudding">
+			<button type="submit" id="buyNowButton" class="btn btn-success w-100">
+				Buy now <i class="bi bi-arrow-right"></i>
+			</button>
+			<button
+				type="submit"
+				id="makeOfferButton"
+				class="btn btn-light w-100 d-none"
+			>
+				Make offer <i class="bi bi-arrow-right"></i>
+			</button>
+		</div>
 	</form>
-	<hr />
-	<ul class="list-unstyled">
+	<ul class="list-unstyled side-pudding">
 		<li class="d-flex align-items-center mb-2">
 			<i class="bi bi-check text-success me-2"></i>
-			<b class="text-success">Free &nbsp</b>
-			Ownership transfer
+			<b class="text-success">Free &nbsp;</b>Ownership transfer
 		</li>
 		<li class="d-flex align-items-center mb-2">
 			<i class="bi bi-check text-success me-2"></i>
-			<b class="text-success">Free &nbsp</b>
-			Transaction support
+			<b class="text-success">Free &nbsp;</b>Transaction support
 		</li>
 		<li class="d-flex align-items-center">
 			<i class="bi bi-check text-success me-2"></i>
 			<span>Secure payments</span>
 		</li>
 	</ul>
-	<div class="row payments justify-content-between align-items-center">
+	<div
+		class="row payments justify-content-between align-items-center side-pudding"
+	>
 		<div class="col-3 d-flex justify-content-center">
-			<img src="assets/svgs/visa.svg" alt="Visa" class="me-2" />
+			<img src="assets/svgs/visa.svg" alt="Visa" class="payment-icon" />
 		</div>
 		<div class="col-3 d-flex justify-content-center">
-			<img src="assets/svgs/googlepay.svg" alt="Google Pay" class="me-2" />
+			<img
+				src="assets/svgs/googlepay.svg"
+				alt="Google Pay"
+				class="payment-icon"
+			/>
 		</div>
 		<div class="col-3 d-flex justify-content-center">
-			<img src="assets/svgs/applepay.svg" alt="Apple Pay" class="me-2" />
+			<img
+				src="assets/svgs/applepay.svg"
+				alt="Apple Pay"
+				class="payment-icon"
+			/>
 		</div>
 		<div class="col-3 d-flex justify-content-center">
-			<img src="assets/svgs/mastercard.svg" alt="MasterCard" />
+			<img
+				src="assets/svgs/mastercard.svg"
+				alt="MasterCard"
+				class="payment-icon"
+			/>
 		</div>
 	</div>
 </div>

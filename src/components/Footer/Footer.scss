@@ -1,0 +1,40 @@
+@import "../../scss/variables";
+
+footer {
+	background: var(--color-primary);
+	color: #ffffff;
+	.footer {
+		// margin-bottom: 45px;
+		.content {
+			padding: 25px 0;
+		}
+
+		.caption {
+			font-size: 0.75rem;
+			font-weight: 400;
+			letter-spacing: 0.4px;
+			line-height: 1rem;
+			.divider {
+				margin: 0 4px;
+			}
+		}
+		a {
+			color: #ffffff;
+			&:hover {
+				color: var(--color-success-high);
+			}
+		}
+	}
+	button {
+		border: none !important;
+	}
+	ul {
+		@include box-shadow;
+		li {
+			padding: 5px 10px;
+			a {
+				color: var(--color-dark-gray) !important;
+			}
+		}
+	}
+}

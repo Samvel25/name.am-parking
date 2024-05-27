@@ -1,51 +1,154 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../../scss/variables";
+
 .offer {
 	position: relative;
-	@media (max-width: 768px) {
-		margin-top: 25px;
-	}
+	margin-top: 25px;
+
 	.card {
 		min-width: 360px;
+		max-width: 480px;
+		background-color: var(--color-white);
+		border: 1px solid var(--color-light-gray);
+		border-radius: var(--border-radius);
+		@include box-shadow;
 		position: absolute;
 		right: 0;
 		top: 0;
 		margin-bottom: var(--spacing-base);
+		padding: 1.5rem 0;
+
 		@media (max-width: 768px) {
 			position: relative;
 			min-width: auto;
+			max-width: 100%;
 		}
 	}
 
 	h4 {
 		color: var(--color-primary);
+		font-family: var(--font-family-heading);
 	}
 
-	.btn-light {
-		background-color: #fffef2;
-		border: 1px solid var(--color-success);
-		color: var(--color-success);
-		padding: 10px;
+	p {
+		// color: var(--color-dark-gray);
+		margin: 0;
 	}
-	.btn-light:hover {
-		// background-color: var(--color-success);
-		color: var(--color-success-high);
-		border-color: var(--color-success-high);
+
+	.border-custom {
+		border-bottom: 1px solid #e2e5ea;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
 	}
+
+	.form-check {
+		display: flex;
+		align-items: center;
+		margin: 0;
+
+		.form-check-input {
+			height: 20px;
+			width: 20px;
+			margin-right: 10px;
+			border-color: var(--color-primary);
+			&:checked {
+				background-color: var(--color-primary);
+				border-color: var(--color-primary);
+			}
+		}
+
+		.form-check-label {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			font-family: var(--font-family-heading);
+			font-size: 1.1rem;
+			color: var(--color-dark-gray);
+			span {
+				background: linear-gradient(135deg, #66ccff, #5bb7e6);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				text-align: end;
+				font-weight: bold;
+			}
+		}
+	}
+
 	.input-group {
 		height: 55px;
+		.input-group-text {
+			border: 1px solid #e2e5ea !important;
+			background-color: var(--color-light-gray);
+			border-color: var(--color-light-gray);
+			color: var(--color-dark-gray);
+		}
+		.form-control {
+			border: 1px solid #e2e5ea !important;
+
+			border-color: var(--color-light-gray);
+		}
 	}
+
+	.btn {
+		padding: 0.75rem 1rem;
+		border-radius: var(--border-radius);
+		font-family: var(--font-family-heading);
+		font-weight: bold;
+		transition: all 0.3s ease;
+
+		&-light {
+			background-color: var(--color-white);
+			border: 1px solid var(--color-success);
+			color: var(--color-success);
+
+			&:hover {
+				background-color: var(--color-success);
+				color: var(--color-white);
+				border-color: var(--color-success);
+			}
+		}
+
+		&-success {
+			background-color: var(--color-success);
+			border: 1px solid var(--color-success);
+			color: var(--color-dark-gray);
+
+			&:hover {
+				background-color: var(--color-success-high);
+				border-color: var(--color-success-high);
+				color: var(--color-white);
+			}
+		}
+	}
+
 	hr {
-		margin: 10px 0 0;
+		margin: 1rem 0;
+		border-color: var(--color-dark-gray);
 	}
+
 	.list-unstyled {
-		padding: 30px 0;
+		padding: 1.5rem 0;
 		margin: 0;
 		li {
 			display: flex;
 			align-items: center;
+			font-family: var(--font-family-base);
+			color: var(--color-dark-gray);
+			margin-bottom: 0.5rem;
 		}
 	}
+	.purchasing-option-bg {
+		background-color: #e8f7f2;
+		border-bottom: 1px solid #e2e5ea;
+		border-top: 1px solid #e2e5ea;
+	}
 }
-
+.side-pudding {
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+}
 .payments {
 	img {
 		margin: auto 0;

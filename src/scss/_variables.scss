@@ -2,10 +2,11 @@
 
 // Define SCSS variables
 $primary-color: rgba(0, 134, 255, 0.9); // Main color
+$primary-color-darken: rgba(0, 120, 230, 0.9); // Darkened main color
 $secondary-color: #66ccff; // Light blue
-$light-gray: #f0f0f0; // Light gray
+$light-gray: #f2f3f4; // Light gray
 $white-color: #ffffff; // White
-$dark-gray: #333333; // Dark gray
+$dark-gray: #00112c; // Dark gray
 $success-color: #f9d71c;
 $success-color-high: #f6c800;
 
@@ -18,6 +19,7 @@ $box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.075);
 	--font-family-base: "Roboto", Arial, sans-serif;
 	--font-family-heading: "Montserrat", Arial, sans-serif;
 	--color-primary: #{$primary-color};
+	--color-primary-darken: #{$primary-color-darken};
 	--color-secondary: #{$secondary-color};
 	--color-light-gray: #{$light-gray};
 	--color-white: #{$white-color};
@@ -36,6 +38,10 @@ $box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.075);
 	@media (max-width: 768px) {
 		font-size: 0.9rem;
 	}
+}
+
+@mixin box-shadow {
+	box-shadow: var(--box-shadow);
 }
 
 // Hide number input arrows
