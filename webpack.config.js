@@ -32,6 +32,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: "./src/index.html",
 			filename: "index.html",
+			minify: false, // Disable minification
 		}),
 		new CopyWebpackPlugin({
 			patterns: [
@@ -49,5 +50,5 @@ module.exports = {
 		open: true,
 		hot: true,
 	},
-	mode: "development",
+	mode: "development", // Ensure this is set to development
 };

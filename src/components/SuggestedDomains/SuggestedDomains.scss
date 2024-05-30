@@ -5,7 +5,7 @@
 
 	h4 {
 		font-family: var(--font-family-heading);
-		color: var(--color-dark-gray);
+		color: var(--color-dark-color);
 		margin-bottom: 2.5rem;
 		font-size: 1.8rem;
 		font-weight: 700;
@@ -16,7 +16,7 @@
 		border-collapse: separate;
 		border-spacing: 0 1rem;
 		background: transparent;
-		box-shadow: var(--box-shadow);
+		// box-shadow: var(--box-shadow);
 		border-radius: var(--border-radius);
 
 		thead {
@@ -51,11 +51,8 @@
 			}
 			&:last-child {
 				td {
+					padding: 1rem 1.8rem 1.6rem;
 					border-bottom: none;
-					padding: 1rem 1.8rem;
-					&:hover {
-						padding: 1rem 1.8rem 1.6rem;
-					}
 				}
 			}
 		}
@@ -104,16 +101,6 @@
 			display: inline-block;
 			box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
 			transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-
-			// &:hover {
-			// 	background: linear-gradient(
-			// 		135deg,
-			// 		#5bb7e6,
-			// 		#66ccff
-			// 	); /* Replace with appropriate color */
-			// 	box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
-			// 	transform: translateY(-0.1rem);
-			// }
 		}
 
 		@media (max-width: 768px) {

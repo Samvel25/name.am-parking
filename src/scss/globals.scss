@@ -54,6 +54,11 @@ body {
 		font-size: 1rem;
 	}
 
+	hr {
+		color: #67696b;
+		height: 1px;
+	}
+
 	section {
 		padding-top: 5rem;
 		padding-bottom: 4rem;
@@ -61,9 +66,9 @@ body {
 			padding-top: 3rem;
 			padding-bottom: 2rem;
 		}
-		@media (max-width: 768px) {
-			padding-top: 2rem;
-		}
+		// @media (max-width: 768px) {
+		// 	padding-top: 2rem;
+		// }
 	}
 	.card {
 		border: none;
@@ -71,6 +76,31 @@ body {
 		@include box-shadow;
 		background-color: #fff;
 		padding: 1.5rem;
+	}
+	.head-text {
+		color: var(--color-dark-color);
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+	.payments {
+		img {
+			margin: auto 0;
+			border: 1px var(--color-dark-color) solid;
+			max-height: 40px;
+			filter: grayscale(1);
+		}
+	}
+
+	.bi {
+		fill: var(--color-success);
+	}
+}
+
+.pointer {
+	cursor: pointer;
+	* {
+		cursor: pointer;
 	}
 }
 
@@ -83,24 +113,19 @@ body {
 		padding-right: 4rem;
 	}
 	@media (max-width: 768px) {
-		padding-left: 1.2rem;
-		padding-right: 1.2rem;
+		padding-left: 1.3rem;
+		padding-right: 1.3rem;
 	}
 	.head-text {
-		color: var(--color-dark-gray);
+		color: var(--color-dark-color);
 		font-size: 3rem;
 		font-weight: 700;
-	}
-
-	.elevate {
-		box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.08),
-			0px 0.25rem 1.5rem rgba(0, 0, 0, 0.08);
 	}
 
 	.payments {
 		img {
 			margin: auto 0;
-			border: 1px var(--color-dark-gray) solid;
+			border: 1px var(--color-dark-color) solid;
 			max-height: 40px;
 			filter: grayscale(1);
 		}
@@ -109,4 +134,9 @@ body {
 	.bi {
 		fill: var(--color-success);
 	}
+}
+
+.elevate {
+	box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.08),
+		0px 0.25rem 1.5rem rgba(0, 0, 0, 0.08);
 }

@@ -3,8 +3,8 @@
 footer {
 	background: var(--color-primary);
 	color: #ffffff;
+
 	.footer {
-		// margin-bottom: 45px;
 		.content {
 			padding: 25px 0;
 		}
@@ -18,22 +18,46 @@ footer {
 				margin: 0 4px;
 			}
 		}
+
 		a {
 			color: #ffffff;
 			&:hover {
 				color: var(--color-success-high);
 			}
 		}
-	}
-	button {
-		border: none !important;
-	}
-	ul {
-		@include box-shadow;
-		li {
-			padding: 5px 10px;
-			a {
-				color: var(--color-dark-gray) !important;
+
+		.dropup {
+			.btn {
+				background-color: var(--color-primary-darken);
+				color: #ffffff;
+				padding: 5px 10px;
+				border: none;
+				&:hover {
+					background-color: var(--color-secondary);
+					color: var(--color-dark-color);
+				}
+			}
+
+			.dropdown-menu {
+				background-color: #ffffff;
+				border: 1px solid var(--color-light-gray);
+				border-radius: var(--border-radius);
+				padding: 10px 0;
+				@include box-shadow;
+
+				li {
+					padding: 5px 20px;
+
+					a {
+						color: var(--color-dark-color) !important;
+						text-decoration: none;
+						&:hover {
+							color: var(--color-primary);
+							background-color: var(--color-light-gray);
+							border-radius: var(--border-radius);
+						}
+					}
+				}
 			}
 		}
 	}

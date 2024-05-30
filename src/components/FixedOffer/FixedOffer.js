@@ -12,11 +12,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		} else {
 			scrollToTopButton.style.display = "none";
 		}
-
-		if (window.scrollY > heroSection.clientHeight) {
-			heroSection.style.visibility = "hidden";
-		} else {
-			heroSection.style.visibility = "visible";
-		}
 	});
 });

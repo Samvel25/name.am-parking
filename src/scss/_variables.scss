@@ -6,11 +6,10 @@ $primary-color-darken: rgba(0, 120, 230, 0.9); // Darkened main color
 $secondary-color: #66ccff; // Light blue
 $light-gray: #f2f3f4; // Light gray
 $white-color: #ffffff; // White
-$dark-gray: #00112c; // Dark gray
+$dark-color: #00112c; // Dark gray
 $success-color: #f9d71c;
 $success-color-high: #f6c800;
 
-$body-color: $dark-gray;
 $border-radius: 0.5rem;
 $box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.075);
 
@@ -23,11 +22,10 @@ $box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.075);
 	--color-secondary: #{$secondary-color};
 	--color-light-gray: #{$light-gray};
 	--color-white: #{$white-color};
-	--color-dark-gray: #{$dark-gray};
+	--color-dark-color: #{$dark-color};
 	--color-success: #{$success-color};
 	--color-success-high: #{$success-color-high};
 
-	--color-body: #{$body-color};
 	--border-radius: #{$border-radius};
 	--box-shadow: #{$box-shadow};
 }

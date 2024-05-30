@@ -5,10 +5,10 @@
 			<p>Pay the full USD $100,000 now, or make an offer.</p>
 		</div>
 	</div>
-	<form id="offer-form">
+	<form id="offer-form" class="offer-form">
 		<div class="side-pudding">
 			<div id="offBorderTwo" class="border-custom">
-				<div class="form-check">
+				<div class="form-check pointer">
 					<input
 						class="form-check-input"
 						type="radio"
@@ -25,14 +25,18 @@
 		</div>
 		<div id="purchasingOptionBg" class="side-pudding">
 			<div id="offBorder" class="form-check border-custom">
-				<input
-					class="form-check-input"
-					type="radio"
-					name="purchaseOption"
-					id="makeOffer"
-					value="makeOffer"
-				/>
-				<label class="form-check-label" for="makeOffer"> Make an offer </label>
+				<div class="pointer w-100 d-flex">
+					<input
+						class="form-check-input"
+						type="radio"
+						name="purchaseOption"
+						id="makeOffer"
+						value="makeOffer"
+					/>
+					<label class="form-check-label" for="makeOffer">
+						Make an offer
+					</label>
+				</div>
 			</div>
 			<div id="offer-input-group" class="d-none">
 				<label for="offer" class="form-label visually-hidden"

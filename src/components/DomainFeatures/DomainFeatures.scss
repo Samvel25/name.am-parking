@@ -15,31 +15,30 @@
 		box-shadow: var(--box-shadow);
 
 		.feature-icon {
-			height: 88px;
+			height: 80px;
 			margin-bottom: 1rem;
 		}
 
 		h3 {
 			font-size: 1.25rem;
-			color: var(--color-dark-gray);
+			color: var(--color-dark-color);
 			font-weight: 600;
 			margin: 0;
 		}
 	}
 
 	.info-section {
-		margin-top: 2rem;
-
 		h2 {
 			font-size: 1.75rem;
-			color: var(--color-dark-gray);
+			color: var(--color-dark-color);
 			font-weight: 700;
+			margin-bottom: 1rem;
 		}
 
 		p {
 			font-size: 1rem;
 			color: var(--color-body);
-			margin: 0.5rem 0 1rem 0;
+			margin: 0.5rem 0 1.5rem 0;
 		}
 
 		.info-link {
@@ -63,13 +62,14 @@
 			align-items: center;
 
 			.feature-icon {
+				margin-right: 10px;
 				margin-bottom: 0;
 				height: 40px;
 			}
 
 			h3 {
 				font-size: 1.25rem;
-				color: var(--color-dark-gray);
+				color: var(--color-dark-color);
 				font-weight: 600;
 				margin-right: 10px;
 			}

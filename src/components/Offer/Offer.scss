@@ -2,12 +2,18 @@
 @import "../../scss/variables";
 
 .offer {
+	// .offer-form {
+	// 	* {
+	// 		cursor: pointer;
+	// 	}
+	// }
+
 	position: relative;
 	margin-top: 25px;
 
 	.card {
 		min-width: 360px;
-		max-width: 480px;
+		max-width: 370px;
 		background-color: var(--color-white);
 		border: 1px solid var(--color-light-gray);
 		border-radius: var(--border-radius);
@@ -31,7 +37,7 @@
 	}
 
 	p {
-		// color: var(--color-dark-gray);
+		// color: var(--color-dark-color);
 		margin: 0;
 	}
 
@@ -61,9 +67,10 @@
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
+			font-weight: 700;
 			font-family: var(--font-family-heading);
 			font-size: 1.1rem;
-			color: var(--color-dark-gray);
+			color: var(--color-dark-color);
 			span {
 				background: linear-gradient(135deg, #66ccff, #5bb7e6);
 				-webkit-background-clip: text;
@@ -82,7 +89,7 @@
 			border: 1px solid #e2e5ea !important;
 			background-color: var(--color-light-gray);
 			border-color: var(--color-light-gray);
-			color: var(--color-dark-gray);
+			color: var(--color-dark-color);
 		}
 		.form-control {
 			border: 1px solid #e2e5ea !important;
@@ -113,7 +120,7 @@
 		&-success {
 			background-color: var(--color-success);
 			border: 1px solid var(--color-success);
-			color: var(--color-dark-gray);
+			color: var(--color-dark-color);
 
 			&:hover {
 				background-color: var(--color-success-high);
@@ -125,7 +132,7 @@
 
 	hr {
 		margin: 1rem 0;
-		border-color: var(--color-dark-gray);
+		border-color: var(--color-dark-color);
 	}
 
 	.list-unstyled {
@@ -135,7 +142,7 @@
 			display: flex;
 			align-items: center;
 			font-family: var(--font-family-base);
-			color: var(--color-dark-gray);
+			color: var(--color-dark-color);
 			margin-bottom: 0.5rem;
 		}
 	}
@@ -152,7 +159,7 @@
 .payments {
 	img {
 		margin: auto 0;
-		border: 1px var(--color-dark-gray) solid;
+		border: 1px var(--color-dark-color) solid;
 		max-height: 40px;
 		filter: grayscale(1);
 	}

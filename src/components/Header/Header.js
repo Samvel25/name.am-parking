@@ -1,1 +1,10 @@
-import "./Header.scss";
+// script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+	const toggler = document.querySelector(".navbar-toggler");
+	const collapse = document.querySelector(".navbar-collapse");
+
+	toggler.addEventListener("click", function () {
+		collapse.classList.toggle("show");
+	});
+});
