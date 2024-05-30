@@ -2,7 +2,7 @@
 
 footer {
 	background: var(--color-primary);
-	color: #ffffff;
+	color: var(--color-white);
 
 	.footer {
 		.content {
@@ -20,7 +20,7 @@ footer {
 		}
 
 		a {
-			color: #ffffff;
+			color: var(--color-white);
 			&:hover {
 				color: var(--color-success-high);
 			}
@@ -29,7 +29,7 @@ footer {
 		.dropup {
 			.btn {
 				background-color: var(--color-primary-darken);
-				color: #ffffff;
+				color: var(--color-white);
 				padding: 5px 10px;
 				border: none;
 				&:hover {
@@ -39,10 +39,10 @@ footer {
 			}
 
 			.dropdown-menu {
-				background-color: #ffffff;
+				background-color: var(--color-white);
 				border: 1px solid var(--color-light-gray);
 				border-radius: var(--border-radius);
-				padding: 10px 0;
+				padding: 0.6rem 0;
 				@include box-shadow;
 
 				li {

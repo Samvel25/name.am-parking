@@ -34,7 +34,7 @@
 					background: linear-gradient(
 						135deg,
 						#5bb7e6,
-						#66ccff
+						var(--color-secondary)
 					); /* Replace with appropriate color */
 					box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 					transform: translateY(-0.1rem);
@@ -71,7 +71,7 @@
 		}
 
 		.btn-outline-primary {
-			min-width: 130px;
+			min-width: 8rem;
 			color: var(--color-primary);
 			border-color: var(--color-primary);
 			transition: background-color 0.3s, border-color 0.3s, color 0.3s;
@@ -91,7 +91,7 @@
 			margin-right: 0.7rem;
 			background: linear-gradient(
 				135deg,
-				#66ccff,
+				var(--color-secondary),
 				#5bb7e6
 			); /* Replace with appropriate color */
 			color: var(--color-white);

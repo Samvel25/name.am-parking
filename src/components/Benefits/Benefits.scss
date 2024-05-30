@@ -2,10 +2,10 @@
 	.find-domain {
 		label {
 			font-weight: 600;
-			line-height: 32px;
-			font-size: 18px;
+			line-height: 2rem;
+			font-size: 1.2rem;
 			display: block;
-			margin-bottom: 20px;
+			margin-bottom: 1.2rem;
 		}
 		.search-row {
 			display: grid;
@@ -13,7 +13,7 @@
 		}
 		.search-container {
 			position: relative;
-			margin-right: 10px;
+			margin-right: 0.6rem;
 			span {
 				position: absolute;
 				top: 50%;
@@ -27,34 +27,52 @@
 		input {
 			background-color: #f7f9fb;
 			border: 1px solid #6868681a;
-			border-radius: 7px;
+			border-radius: var(--border-radius);
 			padding: 12px 20px 12px 42px;
-			line-height: 20px;
+			line-height: 1.3rem;
 			outline: 1px solid transparent;
 			transition: 0.3s;
 			width: 100%;
 		}
 		button {
-			background-color: #66ccff;
-			width: 122px;
+			background-color: var(--color-secondary);
 			text-align: center;
-			padding: 10px;
-			font-size: 14px;
+
+			font-size: 1.2rem;
 			display: inline-block;
-			color: #fff;
-			border-radius: 7px;
-			line-height: 24px;
+			border-radius: var(--border-radius);
+			line-height: 2rem;
 			box-sizing: border-box;
 			border: none;
 			cursor: pointer;
-			box-shadow: 0 0 5px #66ccff;
+			box-shadow: 0 0 5px var(--color-secondary);
 			transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+			a {
+				color: var(--color-white);
+				text-decoration: none;
+				padding: 1rem 2rem;
+			}
 		}
 
 		button:hover {
 			background-color: #4da6ff;
-			box-shadow: 0 0 10px #66ccff, 0 0 20px #66ccff;
+			box-shadow: 0 0 10px var(--color-secondary),
+				0 0 20px var(--color-secondary);
 			transform: scale(1.05);
+		}
+		@media (max-width: 992px) {
+			button {
+				a {
+					padding: 1rem 1rem;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			button {
+				a {
+					padding: 1rem 2rem;
+				}
+			}
 		}
 	}
 }

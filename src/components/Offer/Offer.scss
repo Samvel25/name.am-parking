@@ -12,8 +12,8 @@
 	margin-top: 25px;
 
 	.card {
-		min-width: 360px;
-		max-width: 370px;
+		min-width: 22.5rem;
+		max-width: 2rem;
 		background-color: var(--color-white);
 		border: 1px solid var(--color-light-gray);
 		border-radius: var(--border-radius);
@@ -53,9 +53,9 @@
 		margin: 0;
 
 		.form-check-input {
-			height: 20px;
-			width: 20px;
-			margin-right: 10px;
+			height: 1.3rem;
+			width: 1.3rem;
+			margin-right: 0.6rem;
 			border-color: var(--color-primary);
 			&:checked {
 				background-color: var(--color-primary);
@@ -72,11 +72,8 @@
 			font-size: 1.1rem;
 			color: var(--color-dark-color);
 			span {
-				background: linear-gradient(135deg, #66ccff, #5bb7e6);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
-				text-fill-color: transparent;
+				color: rgb(55, 197, 151);
+				font-family: var(--font-family-heading);
 				text-align: end;
 				font-weight: bold;
 			}
@@ -84,7 +81,7 @@
 	}
 
 	.input-group {
-		height: 55px;
+		height: 3.4rem;
 		.input-group-text {
 			border: 1px solid #e2e5ea !important;
 			background-color: var(--color-light-gray);
@@ -111,19 +108,33 @@
 			color: var(--color-success);
 
 			&:hover {
-				background-color: var(--color-success);
+				background: linear-gradient(
+					0.25turn,
+					var(--color-success-high),
+					var(--color-success)
+				);
+
 				color: var(--color-white);
 				border-color: var(--color-success);
 			}
 		}
 
 		&-success {
-			background-color: var(--color-success);
+			background: linear-gradient(
+				0.25turn,
+				var(--color-success-high),
+				var(--color-success)
+			);
+
 			border: 1px solid var(--color-success);
 			color: var(--color-dark-color);
 
 			&:hover {
-				background-color: var(--color-success-high);
+				background: linear-gradient(
+					0.25turn,
+					var(--color-success),
+					var(--color-success-high)
+				);
 				border-color: var(--color-success-high);
 				color: var(--color-white);
 			}

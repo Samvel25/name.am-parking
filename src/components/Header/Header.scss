@@ -9,8 +9,8 @@
 }
 
 header {
-	background-color: #f2f3f4;
-	color: #00112c;
+	background-color: --color-light-gray;
+	color: var(--color-dark-color);
 	flex-shrink: 0;
 
 	.logo {

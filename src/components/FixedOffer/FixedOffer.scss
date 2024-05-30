@@ -23,10 +23,15 @@
 			var(--color-success)
 		);
 		border-color: var(--color-success-high);
-		&:hover {
-			background: linear-gradient(0.25turn, #e6c200, #d4b000);
-			color: #00112c;
+		transition: background 0.7s ease-in-out, border-color 0.7s ease-in-out;
 
+		&:hover {
+			background: linear-gradient(
+				0.25turn,
+				var(--color-success),
+				var(--color-success-high)
+			);
+			color: var(--color-dark-color);
 			border-color: var(--color-success);
 		}
 	}
